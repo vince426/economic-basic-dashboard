@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(page_title="Econ Dash", page_icon="👌", layout="wide")
 
 # loading the dataset
-df = pd.read_csv("data/test_econ_data.csv")
+df = pd.read_csv("test_econ_data.csv")
 
 
 col1, col2, col3 = st.columns([0.33, 0.06, 0.60])
@@ -75,4 +75,5 @@ with bol2:
 st.write("#")
 
 st.markdown("**Note:** Data shown is simulated for demonstration purposes.")
+
 st.write(filtered_df)
